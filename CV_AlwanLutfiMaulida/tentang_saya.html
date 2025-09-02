@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Saya - Alwan Lutfi Maulida</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      (function() {
+        const theme = localStorage.getItem('theme');
+        if (theme === 'dark') {
+          document.documentElement.classList.add('dark-mode');
+        }
+      })();
+    </script>
+    <style>
+        #about-page {
+            padding: 40px 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        #about-page h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 40px;
+            color: var(--primary-color);
+        }
+        .about-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+            align-items: center;
+        }
+        .about-image img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+        }
+        .about-text h3 {
+            margin-top: 0;
+            color: var(--primary-color);
+        }
+        .about-text p {
+            line-height: 1.7;
+        }
+        @media (max-width: 768px) {
+            .about-container {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+            .about-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html" class="nav-logo">LUTZZ</a>
+            <button class="hamburger" id="hamburger-button" aria-label="Menu">
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+                <span class="hamburger-bar"></span>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="tentang_saya.html">Tentang Saya</a></li>
+                <li><a href="pendidikan.html">Pendidikan</a></li>
+                <li><a href="skill.html">Skill</a></li>
+                <li><a href="kontak_saya.html">Kontak Saya</a></li>
+            </ul>
+            <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                    <input type="checkbox" id="checkbox" />
+                    <div class="slider round"></div>
+                </label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-page">
+            <h2>Lebih Dekat Dengan Saya</h2>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="assets/lutz.jpg" alt="Foto Alwan Lutfi Maulida">
+                </div>
+                <div class="about-text">
+                    <h3>Halo, Saya Alwan Lutfi Maulida</h3>
+                    <p>
+                        Saya adalah seorang murid dari SMK Negeri 1 Bawang di jurusan Pengembangan Perangkat Lunak dan Gim. Dalam jurusan ini saya mengambil konsentrasi keahlian Rekayasa Perangkat Lunak. Saya memiliki minat yang besar dalam pemrograman dan desain web. Saya juga memiliki hobi di bidang fotografi dan editing video.
+                    </p>
+                    <p>
+                        Saya lahir pada tanggal 14 Maret 2009. Alamat saya di Desa Candiwulan, Kecamatan Mandiraja, Kabupaten Banjarnegara, Jawa Tengah. Saya adalah anak pertama dari dua bersaudara.
+                    </p>
+                    <div class="basic-info-about">
+                        <h4>Informasi Dasar</h4>
+                        <ul>
+                            <li><strong>Tanggal Lahir:</strong> 14 Maret 2009</li>
+                            <li><strong>Alamat:</strong> Desa Candiwulan, Mandiraja, Banjarnegara</li>
+                            <li><strong>Bahasa:</strong> Indonesia, Jawa, Inggris (Dasar)</li>
+                            <li><strong>Gender:</strong> Laki-laki</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>LUTZZ</h3>
+                <p>"Tidak ada mimpi yang gagal, yang ada hanya mimpi yang tertunda. Jika kamu merasa gagal dalam mimpi itu, masih ada mimpi-mimpi lain yang bisa dicapai. -Windah Basudara</p>
+            </div>
+            <div class="footer-column">
+                <h3>Akses Cepat</h3>
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="tentang_saya.html">Tentang Saya</a></li>
+                    <li><a href="pendidikan.html">Pendidikan</a></li>
+                    <li><a href="skill.html">Skill</a></li>
+                    <li><a href="kontak_saya.html">Kontak Saya</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Hubungi Saya</h3>
+                <ul>
+                    <li>Email: lutfimaulida001@gmail.com</li>
+                    <li>Telepon: 0821 3437 8295</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; @2025 Alwan Lutfi Maulida.</p>
+            <div class="social-icons">
+                <a href="https://www.tiktok.com/@lutz.10" aria-label="TikTok">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.65 4.31 1.72v3.28c-1.57-.1-3.14-.64-4.34-1.75-1.22-1.11-1.77-2.7-1.75-4.34-.02 3.48-1.51 6.82-4.2 9.05-2.69 2.22-6.15 2.95-9.64 2.04v-3.28c2.69.96 5.65.42 7.85-1.22 2.23-1.67 3.22-4.33 3.48-7.02z"/></svg>
+                </a>
+                <a href="https://www.instagram.com/lutf1.m_/" aria-label="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.85s-.011 3.584-.069 4.85c-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07s-3.584-.012-4.85-.07c-3.252-.148-4.771-1.691-4.919-4.919-.058-1.265-.07-1.645-.07-4.85s.012-3.584.07-4.85c.148-3.225 1.664-4.771 4.919-4.919 1.266-.058 1.644-.07 4.85-.07zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948s.014 3.667.072 4.947c.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.358-.2 6.78-2.618 6.98-6.98.059-1.281.073-1.689.073-4.948s-.014-3.667-.072-4.947c-.2-4.358-2.618-6.78-6.98-6.98-1.281-.059-1.689-.072-4.948-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.162 6.162 6.162 6.162-2.759 6.162-6.162-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4s1.791-4 4-4 4 1.79 4 4-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.441 1.441 1.441 1.441-.645 1.441-1.441-.645-1.44-1.441-1.44z"/></svg>
+                </a>
+                <a href="https://www.facebook.com/share/19XFtXC6Md/" aria-label="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.323-1.325z"/></svg>
+                </a>
+                <a href="https://github.com/Lutzz-10" aria-label="GitHub">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                </a>
+                <a href="https://x.com/14_lutfi47423" aria-label="X (Twitter)">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.617l-5.21-6.817-6.022 6.817h-3.308l7.748-8.835-8.25-10.665h6.817l4.596 6.245 5.454-6.245zm-1.161 17.52h1.839l-10.542-14.03h-1.98l10.683 14.03z"/></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <button id="back-to-top" aria-label="Kembali ke atas">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
